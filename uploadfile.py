@@ -33,8 +33,14 @@ if uploaded_file is not None:
                 gridOptions=gridOptions,
                 update_mode=GridUpdateMode.GRID_CHANGED,
                 columns_auto_size_mode=ColumnsAutoSizeMode.FIT_CONTENTS,
-                #data_return_mode=DataReturnMode.FILTERED   # <-- Gets filtered data, but not filters applied to columns
+                data_return_mode=DataReturnMode.FILTERED   # <-- Gets filtered data, but not filters applied to columns
             )
+        
+        
+        #gridOptions=gridOptions,
+        #update_mode=GridUpdateMode.GRID_CHANGED,
+        #columns_auto_size_mode=ColumnsAutoSizeMode.FIT_CONTENTS,
+        #data_return_mode=DataReturnMode.FILTERED   # <-- Gets filtered data, b
 
         if st.button('Check availability'):
             mfa4 =mfa['data']
